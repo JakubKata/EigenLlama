@@ -1,0 +1,17 @@
+from setuptools import setup
+from pybind11.setup_helpers import Pybind11Extension, build_ext
+
+ext_modules = [
+    Pybind11Extension(
+        "tiny_math",
+        ["core/LLMEngine.cpp"],
+        include_dirs=["core/lib/eigen"]
+    ),
+]
+
+setup(
+    name="tinyllama_engine",
+    ext_modules=ext_modules,
+    cmdclass={"build_ext": build_ext},
+    zip_safe=False,
+)
