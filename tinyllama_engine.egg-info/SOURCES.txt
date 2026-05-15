@@ -1,8 +1,0 @@
-pyproject.toml
-setup.py
-core/LLMEngine.cpp
-tinyllama_engine.egg-info/PKG-INFO
-tinyllama_engine.egg-info/SOURCES.txt
-tinyllama_engine.egg-info/dependency_links.txt
-tinyllama_engine.egg-info/not-zip-safe
-tinyllama_engine.egg-info/top_level.txt
