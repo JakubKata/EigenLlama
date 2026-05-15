@@ -10,6 +10,8 @@ if __name__ == "__main__":
     
     llm = TinyLlamaEngine(model_path)
     while True:
-        input_text = input("\n write something ")
+        input_text = input("\n write something or 'Q' to quit: ")
+        if input_text.upper() == 'Q':
+            break
         llm.generate(input_text, max_tokens=20)
         

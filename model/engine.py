@@ -26,7 +26,6 @@ class TinyLlamaEngine:
 
     def generate(self, prompt, max_tokens=30):
         tokens = self.tokenizer.encode(prompt)
-        print(f"\nUser: {prompt}")
         print("AI: ", end="", flush=True)
 
         printed_text = self.tokenizer.decode(tokens)
